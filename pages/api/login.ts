@@ -1,4 +1,5 @@
 import {NextApiRequest, NextApiResponse} from 'next';
+import {conectaMongoDB} from '../../middlewares/conectaMongoDB';
 
 const endpointLogin = (req: NextApiRequest, res: NextApiResponse) => {
     if(req.method === 'POST'){
